@@ -1,0 +1,14 @@
+site:
+  title: "Firstwebexample"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/firstwebexample.js"
+      api: "build/libs/firstwebexample.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/firstwebexample.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
